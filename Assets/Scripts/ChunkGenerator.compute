@@ -1,0 +1,143 @@
+﻿// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+//#pragma exclude_renderers d3d11_9x
+
+/*
+struct SubChunk
+{
+	double value[100];
+};
+*/
+
+//RWStructuredBuffer<SubChunk> subChunks;
+
+RWTexture2D<float> Result;
+
+int chunk_x;
+int chunk_z;
+float seedoffset_x;
+float seedoffset_z;
+float PerlinScale1;
+float PerlinStrength1;
+float PerlinYScale1;
+float PerlinScale2;
+float PerlinStrength2;
+float PerlinYScale2;
+float PerlinScale3;
+float PerlinStrength3;
+float PerlinYScale3;
+float MagnitudeCurve[64];
+float HeightCurve[64];
+
+static int perm[] =
+{
+	151, 160, 137, 91, 90, 15,
+    131, 13, 201, 95, 96, 53, 194, 233, 7, 225, 140, 36, 103, 30, 69, 142, 8, 99, 37, 240, 21, 10, 23,
+    190, 6, 148, 247, 120, 234, 75, 0, 26, 197, 62, 94, 252, 219, 203, 117, 35, 11, 32, 57, 177, 33,
+    88, 237, 149, 56, 87, 174, 20, 125, 136, 171, 168, 68, 175, 74, 165, 71, 134, 139, 48, 27, 166,
+    77, 146, 158, 231, 83, 111, 229, 122, 60, 211, 133, 230, 220, 105, 92, 41, 55, 46, 245, 40, 244,
+    102, 143, 54, 65, 25, 63, 161, 1, 216, 80, 73, 209, 76, 132, 187, 208, 89, 18, 169, 200, 196,
+    135, 130, 116, 188, 159, 86, 164, 100, 109, 198, 173, 186, 3, 64, 52, 217, 226, 250, 124, 123,
+    5, 202, 38, 147, 118, 126, 255, 82, 85, 212, 207, 206, 59, 227, 47, 16, 58, 17, 182, 189, 28, 42,
+    223, 183, 170, 213, 119, 248, 152, 2, 44, 154, 163, 70, 221, 153, 101, 155, 167, 43, 172, 9,
+    129, 22, 39, 253, 19, 98, 108, 110, 79, 113, 224, 232, 178, 185, 112, 104, 218, 246, 97, 228,
+    251, 34, 242, 193, 238, 210, 144, 12, 191, 179, 162, 241, 81, 51, 145, 235, 249, 14, 239, 107,
+    49, 192, 214, 31, 181, 199, 106, 157, 184, 84, 204, 176, 115, 121, 50, 45, 127, 4, 150, 254,
+    138, 236, 205, 93, 222, 114, 67, 29, 24, 72, 243, 141, 128, 195, 78, 66, 215, 61, 156, 180,
+    151
+};
+
+float Fade(float t)
+{
+	return t * t * t * (t * (t * 6 - 15) + 10);
+}
+
+float Lerp(float t, float a, float b)
+{
+    return a + (t * (b - a));
+}
+
+float Grad(int hash, float x)
+{
+	return (hash & 1) == 0 ? x : -x;
+}
+
+float Grad(int hash, float x, float y)
+{
+	return ((hash & 1) == 0 ? x : -x) + ((hash & 2) == 0 ? y : -y);
+}
+
+float Grad(int hash, float x, float y, float z)
+{
+	int h = hash & 15;
+	float u = h < 8 ? x : y;
+	float v = h < 4 ? y : (h == 12 || h == 14 ? x : z);
+	return ((h & 1) == 0 ? u : -u) + ((h & 2) == 0 ? v : -v);
+}
+
+float Noise(float x, float y, float z)
+{
+	int X = int(floor(x)) & 0xff;
+	int Y = int(floor(y)) & 0xff;
+	int Z = int(floor(z)) & 0xff;
+	x -= floor(x);
+	y -= floor(y);
+	z -= floor(z);
+	float u = Fade(x);
+	float v = Fade(y);
+	float w = Fade(z);
+	int A = (perm[X] + Y) & 0xff;
+	int B = (perm[X + 1] + Y) & 0xff;
+	int AA = (perm[A] + Z) & 0xff;
+	int BA = (perm[B] + Z) & 0xff;
+	int AB = (perm[A + 1] + Z) & 0xff;
+	int BB = (perm[B + 1] + Z) & 0xff;
+	return Lerp(w, Lerp(v, Lerp(u, Grad(perm[AA], x, y, z), Grad(perm[BA], x - 1, y, z)),
+                           Lerp(u, Grad(perm[AB], x, y - 1, z), Grad(perm[BB], x - 1, y - 1, z))),
+                   Lerp(v, Lerp(u, Grad(perm[AA + 1], x, y, z - 1), Grad(perm[BA + 1], x - 1, y, z - 1)),
+                           Lerp(u, Grad(perm[AB + 1], x, y - 1, z - 1), Grad(perm[BB + 1], x - 1, y - 1, z - 1))));
+}
+
+float EvaluateCurve(float curve[64], float time)
+{
+	return curve[int(clamp(time, 0, 1) / 64)];
+}
+
+[numthreads(4, 64, 4)]
+
+void CSMain(uint3 id : SV_DispatchThreadID)
+{
+	//SubChunk subChunk = subChunks[id.x + id.y * 17 + id.z * 256];
+	
+    float3 offset = float3((chunk_x * 16) + (id.x * 4) + seedoffset_x, 0, (chunk_z * 16) + (id.z * 4) + seedoffset_z);
+	float value = 0;
+	float3 worldpos;
+	
+	
+	
+	
+	[loop][allow_uav_condition]
+    for (uint i = 0; i < 100; i++)
+	{
+		uint x = i % 5;
+		uint y = i / 5 % 4;
+		uint z = i / 20;
+		
+		worldpos = float3(x + offset.x, y + offset.y, z + offset.z);
+		value = Noise(worldpos.x * PerlinScale1, worldpos.y * PerlinScale1 * PerlinYScale1, worldpos.z * PerlinScale1) * PerlinStrength1 + Noise(worldpos.x * PerlinScale2, worldpos.y * PerlinScale2 * PerlinYScale2, worldpos.z * PerlinScale2) * PerlinStrength2 + Noise(worldpos.x * PerlinScale3, worldpos.y * PerlinScale3 * PerlinYScale3, worldpos.z * PerlinScale3) * PerlinScale3;
+
+		value = clamp(value * EvaluateCurve(MagnitudeCurve, float(y) / 256), -1, 1);
+		value = ((value + 1) * EvaluateCurve(HeightCurve, float(y) / 256)) - 1;
+
+		//subChunk.value[i] = double(value);
+		
+        int index = id.x * 100 + id.y * 400 + id.z * 25600 + i;
+        int2 pos = int2(index % 320, index / 320);
+		
+        Result[pos] = (value + 1) / 2;
+    }
+	
+	
+	
+	//subChunks[id.x + id.y * 4 + id.z * 4 * 64] = subChunk;
+}
