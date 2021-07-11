@@ -11,7 +11,7 @@ public class WorldChunk
 
 public struct SubChunk
 {
-    public double[] value;
+    public float value;
 };
 public class WorldGenerator : MonoBehaviour
 {
@@ -113,34 +113,32 @@ public class WorldGenerator : MonoBehaviour
         worldChunk.ChunkPosition_z = chunk_z;
 
         //initialize chunk
+        /*
         renderTexture = new RenderTexture(320, 320, 16);
         renderTexture.enableRandomWrite = true;
         renderTexture.Create();
-        /*
+        */
+
+        
         SubChunk[] subChunks;
         subChunks = new SubChunk[4 * 64 * 4];
         for(int i = 0; i < 4 * 64 * 4; i++)
         {
-            subChunks[i].value = new double[5 * 4 * 5];
-            for (int j = 0; j < 5 * 4 * 5; j++)
-            {
-                subChunks[i].value[j] = 0;
-            }
+            subChunks[i].value = 0;
         }
-        */
+        
 
         //generate chunk
         int subChunkSize = sizeof(float) * 5 * 4 * 5;
         int totalSize = subChunkSize;
 
-        /*
-        ComputeBuffer chunksBuffer = new ComputeBuffer(subChunks.Length, totalSize);
+        
+        ComputeBuffer chunksBuffer = new ComputeBuffer(subChunks.Length, /*totalSize*/ sizeof(float) * 128);
         chunksBuffer.SetData(subChunks);
 
-        computeShader.SetBuffer(computeShader.FindKernel("CSMain"), "subChunks", chunksBuffer);
-        */
+        computeShader.SetBuffer(0, "subChunks", chunksBuffer);
 
-        computeShader.SetTexture(0, "Result", renderTexture);
+        //computeShader.SetTexture(0, "Result", renderTexture);
 
         computeShader.SetInt("chunk_x", chunk_x);
         computeShader.SetInt("chunk_z", chunk_z);
@@ -157,12 +155,12 @@ public class WorldGenerator : MonoBehaviour
         computeShader.SetFloat("PerlinYScale3", PerlinYScale3);
         computeShader.SetFloats("MagnitudeCurve", AnimationCurveToFloat(MagnitudeCurve));
         computeShader.SetFloats("HeightCurve", AnimationCurveToFloat(HightCurve));
-
-        computeShader.Dispatch(0, 4, 64, 4);
+        
+        //computeShader.Dispatch(0, 4, 64, 4);
 
         //Get data!
 
-        Texture2D texture = toTexture2D(renderTexture);
+        //Texture2D texture = toTexture2D(renderTexture);
 
         //chunksBuffer.GetData(subChunks);
 
@@ -177,6 +175,13 @@ public class WorldGenerator : MonoBehaviour
             {
                 for (int z = 0; z < 4; z++)
                 {
+                    computeShader.SetInt("subchunk_x", x);
+                    computeShader.SetInt("subchunk_y", y);
+                    computeShader.SetInt("subchunk_z", z);
+
+                    computeShader.Dispatch(0, x == 3 ? 5 : 4, 4, z == 3 ? 5 : 4);
+                    chunksBuffer.GetData(subChunks);
+
                     int i = 0;
                     for (int cx = 0; cx < (x < 3 ? 4 : 5); cx++)
                     {
@@ -184,16 +189,20 @@ public class WorldGenerator : MonoBehaviour
                         {
                             for (int cz = 0; cz < (z < 3 ? 4 : 5); cz++)
                             {
-                                //worldChunk.WorldValue[(x * 4) + cx, (y * 4) + cy, (z * 4) + cz] = (float)subChunk.value[cx + cy * 5 + cz * 5 * 4];
+                                worldChunk.WorldValue[(x * 4) + cx, (y * 4) + cy, (z * 4) + cz] = subChunks[cx + cy * 5 + cz * 5 * 4].value;
+                                
+                                /*
                                 value = texture.GetPixel(i % 320, Mathf.FloorToInt(i / 320)).r;
                                 worldChunk.WorldValue[(x * 4) + cx, (y * 4) + cy, (z * 4) + cz] = value;
+                                */
                                 
+                                /*
                                 if (i == 0 && x == 0)
                                 {
-                                    Debug.Log(value);
+                                    Debug.Log(subChunks[cx + cy * 5 + cz * 5 * 4].value);
                                 }
+                                */
                                 
-
                                 i++;
 
                             }
@@ -205,7 +214,7 @@ public class WorldGenerator : MonoBehaviour
             }
         }
 
-        //chunksBuffer.Dispose();
+        chunksBuffer.Dispose();
         
         //renderTexture.Release();
 
@@ -219,7 +228,7 @@ public class WorldGenerator : MonoBehaviour
 
         for(int i = 0; i < 64; i++)
         {
-            table[i] = curve.Evaluate((float)i / 64);
+            table[i] = curve.Evaluate((float)i / 64f);
         }
 
         return table;
