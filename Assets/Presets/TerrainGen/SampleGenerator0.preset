@@ -1,0 +1,1688 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SampleGenerator0
+  m_TargetType:
+    m_NativeTypeID: 114
+    m_ManagedTypePPtr: {fileID: 11500000, guid: fabe07c9e618a0640a2bd26137886595,
+      type: 3}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorHideFlags
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorClassIdentifier
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: computeShader
+    value: 
+    objectReference: {fileID: 7200000, guid: 3cd0245468c453a4fa4c98d527438206, type: 3}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.size
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].BiomeName
+    value: 0:Flatland
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].PerlinScale1
+    value: 0.05
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].PerlinYScale1
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].PerlinStrength1
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].PerlinScale2
+    value: 0.1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].PerlinYScale2
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].PerlinStrength2
+    value: 0.5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].PerlinScale3
+    value: 0.2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].PerlinYScale3
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].PerlinStrength3
+    value: 0.25
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.size
+    value: 5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[0].time
+    value: -0.0027889796
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[0].value
+    value: 2.98494
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[0].inSlope
+    value: -0.04284023
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[0].outSlope
+    value: -0.04284023
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[0].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[0].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[0].inWeight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[0].outWeight
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[1].time
+    value: 0.047400974
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[1].value
+    value: 2.2590404
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[1].inSlope
+    value: -9.543339
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[1].outSlope
+    value: -9.543339
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[1].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[1].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[1].inWeight
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[1].outWeight
+    value: 0.14111502
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[2].time
+    value: 0.13813022
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[2].value
+    value: 0.1958186
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[2].inSlope
+    value: -2.448859
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[2].outSlope
+    value: -2.448859
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[2].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[2].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[2].inWeight
+    value: 0.21766065
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[2].outWeight
+    value: 0.33333334
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[3].time
+    value: 0.33390063
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[3].value
+    value: 0.00880833
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[3].inSlope
+    value: -0.077739544
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[3].outSlope
+    value: -0.077739544
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[3].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[3].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[3].inWeight
+    value: 0.070217416
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[3].outWeight
+    value: 0.24839199
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[4].time
+    value: 0.45754778
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[4].value
+    value: -0.020251747
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[4].inSlope
+    value: 1.179551
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[4].outSlope
+    value: 1.179551
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[4].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[4].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[4].inWeight
+    value: 0.40799138
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_Curve.Array.data[4].outWeight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_PreInfinity
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_PostInfinity
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].HightCurve.m_RotationOrder
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].MagnitudeCurve.m_Curve.Array.size
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].MagnitudeCurve.m_Curve.Array.data[0].time
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].MagnitudeCurve.m_Curve.Array.data[0].value
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].MagnitudeCurve.m_Curve.Array.data[0].inSlope
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].MagnitudeCurve.m_Curve.Array.data[0].outSlope
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].MagnitudeCurve.m_Curve.Array.data[0].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].MagnitudeCurve.m_Curve.Array.data[0].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].MagnitudeCurve.m_Curve.Array.data[0].inWeight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].MagnitudeCurve.m_Curve.Array.data[0].outWeight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].MagnitudeCurve.m_Curve.Array.data[1].time
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].MagnitudeCurve.m_Curve.Array.data[1].value
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].MagnitudeCurve.m_Curve.Array.data[1].inSlope
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].MagnitudeCurve.m_Curve.Array.data[1].outSlope
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].MagnitudeCurve.m_Curve.Array.data[1].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].MagnitudeCurve.m_Curve.Array.data[1].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].MagnitudeCurve.m_Curve.Array.data[1].inWeight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].MagnitudeCurve.m_Curve.Array.data[1].outWeight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].MagnitudeCurve.m_PreInfinity
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].MagnitudeCurve.m_PostInfinity
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[0].MagnitudeCurve.m_RotationOrder
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].BiomeName
+    value: 1:Floating Islands
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].PerlinScale1
+    value: 0.05
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].PerlinYScale1
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].PerlinStrength1
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].PerlinScale2
+    value: 0.1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].PerlinYScale2
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].PerlinStrength2
+    value: 0.5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].PerlinScale3
+    value: 0.2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].PerlinYScale3
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].PerlinStrength3
+    value: 0.25
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.size
+    value: 14
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[0].time
+    value: -0.009082556
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[0].value
+    value: -0.005601645
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[0].inSlope
+    value: 8.74661
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[0].outSlope
+    value: 8.74661
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[0].tangentMode
+    value: 34
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[0].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[0].inWeight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[0].outWeight
+    value: 0.33333334
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[1].time
+    value: 0.048485465
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[1].value
+    value: 0.49792337
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[1].inSlope
+    value: 6.957284
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[1].outSlope
+    value: 6.957284
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[1].tangentMode
+    value: 34
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[1].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[1].inWeight
+    value: 0.33333334
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[1].outWeight
+    value: 0.33333334
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[2].time
+    value: 0.09054609
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[2].value
+    value: 0.7152909
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[2].inSlope
+    value: 0.16294922
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[2].outSlope
+    value: 0.16294922
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[2].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[2].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[2].inWeight
+    value: 0.33333334
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[2].outWeight
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[3].time
+    value: 0.22500509
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[3].value
+    value: 0.85797375
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[3].inSlope
+    value: 0.21416502
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[3].outSlope
+    value: 0.21416502
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[3].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[3].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[3].inWeight
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[3].outWeight
+    value: 0.33333334
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[4].time
+    value: 0.2786055
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[4].value
+    value: -0.017217413
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[4].inSlope
+    value: 0.026493022
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[4].outSlope
+    value: 0.026493022
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[4].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[4].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[4].inWeight
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[4].outWeight
+    value: 0.33333334
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[5].time
+    value: 0.30470413
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[5].value
+    value: 0.43526086
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[5].inSlope
+    value: 0.81355995
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[5].outSlope
+    value: 0.81355995
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[5].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[5].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[5].inWeight
+    value: 0.33333334
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[5].outWeight
+    value: 0.33333334
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[6].time
+    value: 0.36975542
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[6].value
+    value: 0.7285974
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[6].inSlope
+    value: 1.9732114
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[6].outSlope
+    value: 1.9732114
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[6].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[6].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[6].inWeight
+    value: 0.33333334
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[6].outWeight
+    value: 0.6699836
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[7].time
+    value: 0.5165167
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[7].value
+    value: 0.8673784
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[7].inSlope
+    value: 0.81586814
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[7].outSlope
+    value: 0.81586814
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[7].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[7].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[7].inWeight
+    value: 0.37644094
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[7].outWeight
+    value: 0.33333334
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[8].time
+    value: 0.5473223
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[8].value
+    value: 0.016633764
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[8].inSlope
+    value: 0.23430365
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[8].outSlope
+    value: 0.23430365
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[8].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[8].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[8].inWeight
+    value: 0.33333334
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[8].outWeight
+    value: 0.33333334
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[9].time
+    value: 0.6054012
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[9].value
+    value: 0.48251522
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[9].inSlope
+    value: 3.333137
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[9].outSlope
+    value: 3.333137
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[9].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[9].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[9].inWeight
+    value: 0.33333334
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[9].outWeight
+    value: 0.33333334
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[10].time
+    value: 0.672153
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[10].value
+    value: 0.75148106
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[10].inSlope
+    value: 3.0197172
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[10].outSlope
+    value: 3.0197172
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[10].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[10].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[10].inWeight
+    value: 0.33333334
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[10].outWeight
+    value: 0.33333334
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[11].time
+    value: 0.83651394
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[11].value
+    value: 0.9067369
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[11].inSlope
+    value: 0.41602173
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[11].outSlope
+    value: 0.41602173
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[11].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[11].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[11].inWeight
+    value: 0.7096017
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[11].outWeight
+    value: 0.33333334
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[12].time
+    value: 0.87491363
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[12].value
+    value: 0.0007985234
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[12].inSlope
+    value: -0.38550985
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[12].outSlope
+    value: -0.38550985
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[12].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[12].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[12].inWeight
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[12].outWeight
+    value: 0.8295561
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[13].time
+    value: 1.0136378
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[13].value
+    value: -0.005601645
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[13].inSlope
+    value: -0.046135936
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[13].outSlope
+    value: -0.046135936
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[13].tangentMode
+    value: 34
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[13].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[13].inWeight
+    value: 0.33333334
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_Curve.Array.data[13].outWeight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_PreInfinity
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_PostInfinity
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].HightCurve.m_RotationOrder
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].MagnitudeCurve.m_Curve.Array.size
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].MagnitudeCurve.m_Curve.Array.data[0].time
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].MagnitudeCurve.m_Curve.Array.data[0].value
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].MagnitudeCurve.m_Curve.Array.data[0].inSlope
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].MagnitudeCurve.m_Curve.Array.data[0].outSlope
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].MagnitudeCurve.m_Curve.Array.data[0].tangentMode
+    value: 34
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].MagnitudeCurve.m_Curve.Array.data[0].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].MagnitudeCurve.m_Curve.Array.data[0].inWeight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].MagnitudeCurve.m_Curve.Array.data[0].outWeight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].MagnitudeCurve.m_Curve.Array.data[1].time
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].MagnitudeCurve.m_Curve.Array.data[1].value
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].MagnitudeCurve.m_Curve.Array.data[1].inSlope
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].MagnitudeCurve.m_Curve.Array.data[1].outSlope
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].MagnitudeCurve.m_Curve.Array.data[1].tangentMode
+    value: 34
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].MagnitudeCurve.m_Curve.Array.data[1].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].MagnitudeCurve.m_Curve.Array.data[1].inWeight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].MagnitudeCurve.m_Curve.Array.data[1].outWeight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].MagnitudeCurve.m_PreInfinity
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].MagnitudeCurve.m_PostInfinity
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[1].MagnitudeCurve.m_RotationOrder
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].BiomeName
+    value: 2:Mountains
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].PerlinScale1
+    value: 0.05
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].PerlinYScale1
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].PerlinStrength1
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].PerlinScale2
+    value: 0.1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].PerlinYScale2
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].PerlinStrength2
+    value: 0.5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].PerlinScale3
+    value: 0.2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].PerlinYScale3
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].PerlinStrength3
+    value: 0.25
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.size
+    value: 5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[0].time
+    value: -0.004433114
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[0].value
+    value: 3.001286
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[0].inSlope
+    value: -0.04284023
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[0].outSlope
+    value: -0.04284023
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[0].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[0].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[0].inWeight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[0].outWeight
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[1].time
+    value: 0.049872898
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[1].value
+    value: 2.5096812
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[1].inSlope
+    value: -9.543339
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[1].outSlope
+    value: -9.543339
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[1].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[1].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[1].inWeight
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[1].outWeight
+    value: 0.14111502
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[2].time
+    value: 0.14716342
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[2].value
+    value: 0.6317317
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[2].inSlope
+    value: -2.448859
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[2].outSlope
+    value: -2.448859
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[2].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[2].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[2].inWeight
+    value: 0.21766065
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[2].outWeight
+    value: 0.33333334
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[3].time
+    value: 0.34240502
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[3].value
+    value: 0.18316828
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[3].inSlope
+    value: -4.6643176
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[3].outSlope
+    value: -4.6643176
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[3].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[3].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[3].inWeight
+    value: 0.074871235
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[3].outWeight
+    value: 0.24839199
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[4].time
+    value: 0.45754778
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[4].value
+    value: -0.020251747
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[4].inSlope
+    value: 1.179551
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[4].outSlope
+    value: 1.179551
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[4].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[4].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[4].inWeight
+    value: 0.40799138
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_Curve.Array.data[4].outWeight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_PreInfinity
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_PostInfinity
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].HightCurve.m_RotationOrder
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].MagnitudeCurve.m_Curve.Array.size
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].MagnitudeCurve.m_Curve.Array.data[0].time
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].MagnitudeCurve.m_Curve.Array.data[0].value
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].MagnitudeCurve.m_Curve.Array.data[0].inSlope
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].MagnitudeCurve.m_Curve.Array.data[0].outSlope
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].MagnitudeCurve.m_Curve.Array.data[0].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].MagnitudeCurve.m_Curve.Array.data[0].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].MagnitudeCurve.m_Curve.Array.data[0].inWeight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].MagnitudeCurve.m_Curve.Array.data[0].outWeight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].MagnitudeCurve.m_Curve.Array.data[1].time
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].MagnitudeCurve.m_Curve.Array.data[1].value
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].MagnitudeCurve.m_Curve.Array.data[1].inSlope
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].MagnitudeCurve.m_Curve.Array.data[1].outSlope
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].MagnitudeCurve.m_Curve.Array.data[1].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].MagnitudeCurve.m_Curve.Array.data[1].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].MagnitudeCurve.m_Curve.Array.data[1].inWeight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].MagnitudeCurve.m_Curve.Array.data[1].outWeight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].MagnitudeCurve.m_PreInfinity
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].MagnitudeCurve.m_PostInfinity
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[2].MagnitudeCurve.m_RotationOrder
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].BiomeName
+    value: 3:Caves
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].PerlinScale1
+    value: 0.05
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].PerlinYScale1
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].PerlinStrength1
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].PerlinScale2
+    value: 0.1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].PerlinYScale2
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].PerlinStrength2
+    value: 0.5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].PerlinScale3
+    value: 0.2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].PerlinYScale3
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].PerlinStrength3
+    value: 0.25
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.size
+    value: 7
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[0].time
+    value: -0.004433114
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[0].value
+    value: 3.001286
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[0].inSlope
+    value: -0.04284023
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[0].outSlope
+    value: -0.04284023
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[0].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[0].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[0].inWeight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[0].outWeight
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[1].time
+    value: 0.19339086
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[1].value
+    value: 1.0980921
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[1].inSlope
+    value: -2.230917
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[1].outSlope
+    value: -2.230917
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[1].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[1].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[1].inWeight
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[1].outWeight
+    value: 0.5311113
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[2].time
+    value: 0.40201634
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[2].value
+    value: 0.8239493
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[2].inSlope
+    value: -2.448859
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[2].outSlope
+    value: -2.448859
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[2].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[2].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[2].inWeight
+    value: 0.21766065
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[2].outWeight
+    value: 0.33333334
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[3].time
+    value: 0.50338113
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[3].value
+    value: 0.52369344
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[3].inSlope
+    value: -0.0549769
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[3].outSlope
+    value: -0.0549769
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[3].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[3].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[3].inWeight
+    value: 0.7227172
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[3].outWeight
+    value: 0.33333334
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[4].time
+    value: 0.6466045
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[4].value
+    value: 0.8071171
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[4].inSlope
+    value: 2.765841
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[4].outSlope
+    value: 2.765841
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[4].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[4].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[4].inWeight
+    value: 0.33333334
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[4].outWeight
+    value: 0.18717307
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[5].time
+    value: 0.8436648
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[5].value
+    value: 1.0816205
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[5].inSlope
+    value: 3.0986977
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[5].outSlope
+    value: 3.0986977
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[5].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[5].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[5].inWeight
+    value: 0.1877542
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[5].outWeight
+    value: 0.7468603
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[6].time
+    value: 1.0051901
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[6].value
+    value: 3.0044477
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[6].inSlope
+    value: -0.031299543
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[6].outSlope
+    value: -0.031299543
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[6].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[6].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[6].inWeight
+    value: 0.46863905
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_Curve.Array.data[6].outWeight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_PreInfinity
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_PostInfinity
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].HightCurve.m_RotationOrder
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.size
+    value: 5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[0].time
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[0].value
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[0].inSlope
+    value: 0.0040742145
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[0].outSlope
+    value: 0.0040742145
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[0].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[0].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[0].inWeight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[0].outWeight
+    value: 0.32529992
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[1].time
+    value: 0.24461922
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[1].value
+    value: 0.99829406
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[1].inSlope
+    value: 0.0134522095
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[1].outSlope
+    value: 0.0134522095
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[1].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[1].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[1].inWeight
+    value: 0.33333334
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[1].outWeight
+    value: 0.6820436
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[2].time
+    value: 0.49633732
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[2].value
+    value: 3.0019066
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[2].inSlope
+    value: -0.05080021
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[2].outSlope
+    value: -0.05080021
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[2].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[2].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[2].inWeight
+    value: 0.2530125
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[2].outWeight
+    value: 0.33333334
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[3].time
+    value: 0.7564246
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[3].value
+    value: 1.0011364
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[3].inSlope
+    value: 0.023336785
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[3].outSlope
+    value: 0.023336785
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[3].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[3].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[3].inWeight
+    value: 0.57042027
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[3].outWeight
+    value: 0.33333334
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[4].time
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[4].value
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[4].inSlope
+    value: 0.017816555
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[4].outSlope
+    value: 0.017816555
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[4].tangentMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[4].weightedMode
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[4].inWeight
+    value: 0.25239563
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_Curve.Array.data[4].outWeight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_PreInfinity
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_PostInfinity
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomes.Array.data[3].MagnitudeCurve.m_RotationOrder
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: biomeScale
+    value: 0.3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: debugcube
+    value: 
+    objectReference: {fileID: 3507688054909668708, guid: 3d65cc77679b4514c9f20f215c4f695b,
+      type: 3}
+  - target: {fileID: 0}
+    propertyPath: seedoffset_x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: seedoffset_z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: renderTexture
+    value: 
+    objectReference: {fileID: 0}

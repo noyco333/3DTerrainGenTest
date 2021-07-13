@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LoadedChunk
 {
     public Vector2Int pos;
     public GameObject gameObject;
+    public int biomeID;
+    public string biomeName;
 }
 public class ChunkLoader : MonoBehaviour
 {
@@ -328,7 +331,11 @@ public class ChunkLoader : MonoBehaviour
 
     public int renderdistance;
 
+    public Text debugtext;
+
     int frames;
+
+    LoadedChunk currentChunk;
 
 
     // Start is called before the first frame update
@@ -348,6 +355,7 @@ public class ChunkLoader : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         PlayerChunk = new Vector2Int(Mathf.FloorToInt(Player.position.x / 16), Mathf.FloorToInt(Player.position.z / 16));
         
         frames++;
@@ -394,12 +402,32 @@ public class ChunkLoader : MonoBehaviour
                 LoadedChunks.RemoveAt(i);
                 i--;
             }
+
+            if(LoadedChunks[i].pos == PlayerChunk)
+            {
+                currentChunk = LoadedChunks[i];
+            }
         }
+
+        debugtext.text =    string.Format("{0} FPS", Mathf.RoundToInt(1 / Time.unscaledDeltaTime)) + "\n" +
+                            string.Format("X {0}, Y {1}, Z {2}", Mathf.RoundToInt(Player.position.x), Mathf.RoundToInt(Player.position.y), Mathf.RoundToInt(Player.position.z)) + "\n" +
+                            string.Format("Chunk: ({0}, {1})", PlayerChunk.x, PlayerChunk.y) + "\n" +
+                            string.Format("Biome: {0} ({1})", currentChunk.biomeID, currentChunk.biomeName);
     }
 
     
     void BuildChunk(int chunk_x, int chunk_z)
     {
+        int biomeID = WG.GenerateBiome(chunk_x, chunk_z);
+        int neighborBiome_xp = WG.GenerateBiome(chunk_x + 1, chunk_z);
+        int neighborBiome_xm = WG.GenerateBiome(chunk_x - 1, chunk_z);
+        int neighborBiome_zp = WG.GenerateBiome(chunk_x, chunk_z + 1);
+        int neighborBiome_zm = WG.GenerateBiome(chunk_x, chunk_z - 1);
+
+        Color color;
+        Color blendcolor;
+        Color finalcolor;
+
         GameObject Chunk;
 
         if (UnloadedChunks.Count > 0)
@@ -417,6 +445,7 @@ public class ChunkLoader : MonoBehaviour
 
         List<Vector3> Verts = new List<Vector3>();
         List<int> Tris = new List<int>();
+        List<Color> Colors = new List<Color>();
 
         WorldChunk ChunkData = new WorldChunk();
         bool found = false;
@@ -432,13 +461,15 @@ public class ChunkLoader : MonoBehaviour
         //Generate chunk on the run
         if(found == false)
         {
-            ChunkData = WG.GenerateChunkGPU(chunk_x, chunk_z);
+            ChunkData = WG.GenerateChunk(chunk_x, chunk_z);
         }
 
         //Add chunk to the list, then generate terrain
         LoadedChunk NewChunk = new LoadedChunk();
 
         NewChunk.pos = new Vector2Int(chunk_x, chunk_z);
+        NewChunk.biomeID = ChunkData.BiomeID;
+        NewChunk.biomeName = WG.biomes[ChunkData.BiomeID].BiomeName;
         NewChunk.gameObject = Chunk;
 
         LoadedChunks.Add(NewChunk);
@@ -489,14 +520,38 @@ public class ChunkLoader : MonoBehaviour
                         int indexB2 = cornerIndexBFromEdge[triangulation[i + 2]];
                         float valueB2 = cubevalues[indexB2];
 
-                        //interpolate!
-                        
+                        //interpolate color
+                        //biome blend
+                        finalcolor = WG.biomes[biomeID].color;
+
+                        if (x > 7 && neighborBiome_xp != biomeID)
+                        {
+                            blendcolor = WG.biomes[neighborBiome_xp].color;
+                            finalcolor = Color.Lerp(finalcolor, blendcolor, (float)(x - 8) / 8f);
+                        }
+                        if (x < 8 && neighborBiome_xm != biomeID)
+                        {
+                            blendcolor = WG.biomes[neighborBiome_xm].color;
+                            finalcolor = Color.Lerp(finalcolor, blendcolor, (float)(7 - x) / 8f);
+                        }
+                        if (z > 7 && neighborBiome_zp != biomeID)
+                        {
+                            blendcolor = WG.biomes[neighborBiome_zp].color;
+                            finalcolor = Color.Lerp(finalcolor, blendcolor, (float)(z - 8) / 8f);
+                        }
+                        if (z < 8 && neighborBiome_zm != biomeID)
+                        {
+                            blendcolor = WG.biomes[neighborBiome_zm].color;
+                            finalcolor = Color.Lerp(finalcolor, blendcolor, (float)(7 - z) / 8f);
+                        }
+
                         Verts.Add(InterpolateVerts(cubeCorners[indexA0], cubeCorners[indexB0],valueA0,valueB0) + new Vector3(x, y, z));
                         Verts.Add(InterpolateVerts(cubeCorners[indexA1], cubeCorners[indexB1], valueA1, valueB1) + new Vector3(x, y, z));
                         Verts.Add(InterpolateVerts(cubeCorners[indexA2], cubeCorners[indexB2], valueA2, valueB2) + new Vector3(x, y, z));
-                        
 
-                        
+                        Colors.Add(finalcolor);
+                        Colors.Add(finalcolor);
+                        Colors.Add(finalcolor);
 
                         Tris.Add(Tris.Count);
                         Tris.Add(Tris.Count);
@@ -509,7 +564,8 @@ public class ChunkLoader : MonoBehaviour
         Mesh ChunkMesh = Chunk.GetComponent<MeshFilter>().mesh;
         ChunkMesh.vertices = Verts.ToArray();
         ChunkMesh.triangles = Tris.ToArray();
-        
+        ChunkMesh.SetColors(Colors.ToArray());
+
         ChunkMesh.RecalculateBounds();
         ChunkMesh.RecalculateNormals();
 
